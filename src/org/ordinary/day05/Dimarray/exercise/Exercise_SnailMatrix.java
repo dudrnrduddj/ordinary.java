@@ -14,39 +14,32 @@ public class Exercise_SnailMatrix {
 		//8 - array[j][i] 2
 		//9 - array[i][j] 1
 		
-		
-		
-		
-		
 		int[][] array = new int[5][5];
 		int k = 1;
 		
-		for(int i = 0; i < array.length; i++) {
-			if(i % 2 == 0) {
-				
-				if(i != 0) {
-					for(int j = 1; j < array.length; j++) {
-						array[i][j] = k++;
-					}
-				}else {
-					for(int j = array.length-1; j >= 0; j--) {
-						array[i][j] = k++;
-					}
+		for(int i = 0; i < 3; i++) {
+			if(i == 0) {
+				for(int j = 4; j >= 0; j--) {
+					array[i][j] = k++;
 				}
 				
-			}else {
-				if(i == 1 || i == 5) {
-					for(int j = 1; j < array.length; j++) {
-						array[j][i] = k++;
-					}
-				}else {
-					for(int j = array.length-1; j >= 0; j--) {
-						array[j][i] = k++;
-					}
+				k--;
+				
+				for(int j = 0; j < array.length; j++) {
+					array[j][i] = k++;
+				}
+				
+			}else if(i == 1){
+				for(int j = i; j < array.length; j++) {
+					array[5-i][j] = k++;
+				}
+				k--;
+				for(int j = 4; j > 0; j--) {
+					array[j][5-i] = k++;
 				}
 			}
 		}
-	
+		
 		
 		
 		

@@ -25,7 +25,7 @@ public class Exam_Static {
 		smp.sampleMethod();
 		smp.goodMethod();
 		
-		// static 멤버는 static레벨로 접근하는 것이 바람직하다.
+		// static 영역의 변수는 static레벨로 참조하라는 경고문
 		smp.originMethod(); //The static method originMethod() from the type
 //						      StaticSample should be accessed in a static way
 	}

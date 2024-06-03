@@ -1,4 +1,4 @@
-package org.ordinary.day09.oop.polymrphism;
+package org.ordinary.day09.oop.polymorphism;
 
 
 class Person{

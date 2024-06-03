@@ -29,7 +29,7 @@ public class Exercise_Exception2 {
 					}catch(InputMismatchException e){
 						scanner.next();						// 써줘야 nextINt에 들어가지 못한 문자가 next()로 들어가 처리가 된다.
 						System.out.println("정수를 입력해주세요.");
-						i--;		/// 중요!!!! -> 뒤로 감으로써 문자 입력시에 catch로 받고 i 카운트르 한번더 줌으로써 정수 입력기회르 준다.
+						i--;		/// 중요!!!! -> 뒤로 감으로써 문자 입력시에 catch로 받고 i 카운트를 한번더 줌으로써 정수 입력기회를 준다.
 						continue;	// 따라서 총 3개의 정수가 입력될때까지 catch시켜준다는 것이다.
 					}
 				}

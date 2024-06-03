@@ -1,5 +1,6 @@
 package org.ordinary.day04.array.practice;
 
+
 public class RunPractice {
 
 	public static void main(String[] args) {

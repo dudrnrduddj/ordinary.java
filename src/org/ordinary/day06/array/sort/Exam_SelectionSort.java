@@ -24,7 +24,7 @@ public class Exam_SelectionSort {
 //				if(arrs[min] > arrs[j]) {
 //					min = j;
 //				}
-//				}
+//			}
 //			int temp  = arrs[i];
 //			arrs[i] = arrs[min];
 //			arrs[min] = temp;
@@ -52,6 +52,5 @@ public class Exam_SelectionSort {
 		for(int a : arrs) {
 			System.out.print(a+" ");
 		}
-		
 	}
 }

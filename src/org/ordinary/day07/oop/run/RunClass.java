@@ -12,9 +12,8 @@ public class RunClass {
 		
 		RunClass runClass = new RunClass();
 		runClass.oopMember();
+
 		// 만약 static 레벨로 메소드를 생성하면 인스턴스를 생성하지 않고 바로 클래스레벨에서 접근 가능하다.
-		
-		
 		
 	}
 	

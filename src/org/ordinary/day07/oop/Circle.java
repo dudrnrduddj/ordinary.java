@@ -9,7 +9,7 @@ public class Circle {
 	private String privateName;
 	
 	public String getName() {
-		return privateName;
+		return this.privateName;
 	}
 
 	public void setName(String privateName) {
@@ -17,7 +17,7 @@ public class Circle {
 	}
 
 	public double getRadius() {
-		return privateRadius;
+		return this.privateRadius;
 	}
 	
 	public void setRadius(double privateRadius) {
