@@ -29,7 +29,8 @@ public class Exam_MapCollection {
 		// 6. java.lang 패키지
 		// 7. 기본생성자 상속 시 super()
 		
-		
+		System.out.println(stdMap.keySet()); // 모든 key값 반환
+		System.out.println(stdMap.values()); // key 제외 모든 value값 반환
 		
 	}
 	
@@ -68,11 +69,12 @@ public class Exam_MapCollection {
 	}
 	
 	public void basicSample() {
-		// 02 - 서울, 031 - 경기도, 033 - 강원도
+				// 02 - 서울, 031 - 경기도, 033 - 강원도
 				// 041 - 충청북도, 042 - 대전, 043 - 충청북도, 044 - 세종특별시
 				// 051 - 부산, 052 - 울산, 053 - 대구, 054 - 경상북도, 055 - 경상남도
 				// 061 - 전라남도, 062 - 광주, 063 - 전라북도, 064 - 제주도
 				Map<String, String> map = new HashMap<String, String>();
+				
 				map.put("02", "서울");
 				map.put("031", "경기도");
 				map.put("032", "인천");
