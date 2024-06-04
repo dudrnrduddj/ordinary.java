@@ -32,7 +32,6 @@ class ViewStudent {
 
 	public void displayMsg(String string) {
 		System.out.println(string);
-		
 	}
 
 	public Student inputStudent() {
@@ -49,10 +48,10 @@ class ViewStudent {
 		return student;
 	}
 
-	public String inputOneByName() {
+	public String inputOneByName(String category) { // O
 		Scanner scanner  = new Scanner(System.in);
 		System.out.println("==== 학생 정보 이름 검색 ====");
-		System.out.print("검색할 이름 : ");
+		System.out.print(category+"할 이름 : ");
 		String name = scanner.next();
 		return name;
 	}
@@ -69,13 +68,7 @@ class ViewStudent {
 		}
 	}
 
-	public int inputIndex() {
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("==== index를 입력하세요 ====");
-		System.out.print("index : ");
-		int index = scanner.nextInt();
-		return index;
-	}
+	
 	
 	public void retestList(List<Student> reTestList){
 		System.out.println("==== 재시험 명단 ====");
@@ -87,6 +80,17 @@ class ViewStudent {
 				System.out.println("========================");
 			}
 		}
+	}
+
+	public Student modifyStudent(Student std) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("수정할 1차 점수 입력 : ");
+		std.setScore1(scanner.nextInt());
+		System.out.print("수정할 2차 점수 입력 : ");
+		std.setScore2(scanner.nextInt());
+		
+		return std;
+		
 	}
 	
 	
