@@ -6,7 +6,9 @@ public interface ManageInterface {
 	
 	void registerStudent(Student student);
 	
-	List<Student> searchOneByName(String name);
+	List<Student> searchListByName(String name);
+	
+	Student searchOneByName(String name);
 	
 	List<Student> selectAllStudents();
 	

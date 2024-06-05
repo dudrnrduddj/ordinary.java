@@ -60,10 +60,10 @@ public class MusicApp {
 			case 6:
 				//6. 특정 곡 정보수정
 				title = view.searchTitle("수정");
-//				index = manage.searchTitleIndex(title); // index 1부터 시작
-//				music = manage.searchOneMusicByTitle(title);
-//				music = view.modifyMusic(music);
-//				manage.modifyMusic(index-1, music);
+				index = manage.searchTitleIndex(title); // index 1부터 시작
+				music = manage.searchOneMusicByTitle(title);
+				music = view.modifyMusic(music);
+				manage.modifyMusic(index-1, music);
 				
 				// map써서 index, music 각각 저장해서 활용하기
 //				Map<String, Object> result = manage.modifyMusic(title);
@@ -72,16 +72,17 @@ public class MusicApp {
 				
 				break;
 			case 7:
-
+				//7. 곡명 오름차순 정렬
+				manage.sortByTitleAsc();
 				break;
 			case 8:
-
+				manage.sortByTitleDesc();
 				break;
 			case 9:
-
+				manage.sortBySingerAsc();
 				break;
 			case 10:
-
+				manage.sortBySingerDesc();
 				break;
 			case 0:
 				view.printMsg("프로그램을 종료합니다.");

@@ -17,6 +17,7 @@ public class ViewMusic {
 	
 	
 	public int printMenu() {
+		scanner.nextLine();
 		System.out.println("=== === 메인 메뉴 === ===");
 		System.out.println("1. 마지막 위치에 곡 추가");
 		System.out.println("2. 첫 위치에 곡 추가");

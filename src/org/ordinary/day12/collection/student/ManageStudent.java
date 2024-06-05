@@ -19,7 +19,7 @@ public class ManageStudent implements ManageInterface{
 	}
 
 	@Override
-	public List<Student> searchOneByName(String name) {
+	public List<Student> searchListByName(String name) {
 		List<Student> searchList = new ArrayList<Student>();
 		if(name != null) {
 			for(Student search : studentList) {
@@ -30,6 +30,18 @@ public class ManageStudent implements ManageInterface{
 		}
 		
 		return searchList;
+	}
+	
+	public Student searchOneByName(String name) {
+		if(name != null) {
+			for(Student search : studentList) {
+				if(search.getName().equals(name)) {
+					return search;
+				}
+			}
+		}
+		
+		return null;
 	}
 
 	@Override
@@ -87,6 +99,12 @@ public class ManageStudent implements ManageInterface{
 			}
 		}
 		return 0;
+	}
+
+	public String checkPass(Student student) {
+		
+		
+		return null;
 	}
 	
 	
